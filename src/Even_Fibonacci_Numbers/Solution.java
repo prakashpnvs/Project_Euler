@@ -5,7 +5,6 @@ public class Solution {
     /* Dynamic programming bottom up approach */
     public static int findSumOfEvenValues(int n) {
         int sum = 0;
-
         int arr[] = new int[n+1];
 
         arr[0] = 0;
@@ -20,14 +19,12 @@ public class Solution {
                 sum = sum + arr[i];
             }
         }
-
         return sum;
-
     }
 
 
     public static void main(String[] args) {
-        /* Take arbitrary number whose fibonacci value would be much greater than 4 million */
+        /* Take an arbitrary number whose fibonacci value would be much greater than 4 million */
         System.out.println(Solution.findSumOfEvenValues(100));
     }
 }
